@@ -19,6 +19,18 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 ***********************************************************************/
 
 // Your code here
+let arrowMyMap = (array, cb) => {
+  let newarr = [];
+  for (let i = 0; i < array.length; i++)
+  {
+    let el = cb(array[i]);
+    newarr.push(el);
+  }
+  return newarr;
+}
+const yell = el => el.toUpperCase() + '!'
+let result2 = arrowMyMap(['run', 'Forrest'], yell);
+console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
