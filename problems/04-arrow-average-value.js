@@ -19,7 +19,6 @@ let arrowAvgValue = (array) => {
     sum += el;
 
   }
-  console.log(sum);
   return sum / array.length;
 }
 
